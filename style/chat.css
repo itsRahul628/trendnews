@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgba(79, 158, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Centering Navbar Text */
+b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    flex: 1;
+}
+
+/* Navbar Links */
+b a {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(31, 10, 10);
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+b a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 23px;
+    mix-blend-mode: multiply;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Stylish Login Button */
+.login-button {
+    padding: 6px 14px;
+    background: linear-gradient(135deg, #ff9f4a, #963410);
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #bd6f2a, #963410);
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Headline Styling */
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heading:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+h2{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    font-weight: 600;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    gap: 5px;
+}
+
+/* News Boxes */
+.box1, .box2, .box3, .box4 {
+    height: 55vh;
+    width: 20vw;
+    margin: 9px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.box1 { background-color: #602c1a; }
+.box2 { background-color: rgb(36, 121, 121); }
+.box3 { background-color: rgb(85, 85, 14); }
+.box4 { background-color: rgba(79, 158, 255, 0.2); }
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(49, 21, 21, 0.895);
+    color: #ffcc00;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+li:hover {
+    color: #ffcc00;
+}
+
+/* More News Button */
+.more-News {
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #ff9f4a, #873619);
+    border-radius: 15px;
+    color: #000;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.more-News:hover {
+    background: #5d320c;
+    color: #d3c6c6;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    b a {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    b a {
+        font-size: 14px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 100%;
+    }
+}
